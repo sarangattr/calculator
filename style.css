@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 90%;
+    padding: 50px;
+    height: 520px;
+    background-color: rgb(33, 28, 28);
+}
+
+.screen {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.result,.preview {
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    width: 100%;
+    /* text-align: end; */
+    border: none;
+    outline: none;
+}
+
+.result {
+    color: white;
+    font-size: 70px;
+    height: 71px;
+}
+
+.preview {
+    color:burlywood;
+    font-size: 50px;
+    height: 51px;
+}
+
+.screen > hr {
+    border: none;
+    height:1px;
+    background-color: rgb(74, 66, 66);
+}
+
+.keypad {
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    margin-top: 20px;
+}
+
+.numbers,.operators {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.operators {
+    gap: 5px;
+}
+.numbers {
+    gap: 5px;
+}
+
+.numbers > button {
+    flex: 0 0 32%;
+    background-color: darkslategrey;
+}
+
+.operators button {
+    flex: 0 0 47%;
+    background-color: rgb(134, 117, 74);
+}
+
+#clearScreen
+{
+    background-color: coral !important;
+}
+
+.keypad > * > button {
+    color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.keypad > * > button:hover {
+    background-color: hsl(10%, 10%, 10%);
+}
